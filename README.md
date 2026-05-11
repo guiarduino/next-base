@@ -105,24 +105,7 @@ npm install
 
 ---
 
-### 3. Configure as variáveis de ambiente
-
-Crie um `.env.local` baseado no exemplo:
-
-```bash
-cp .env.example .env.local
-```
-
-Exemplo:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:8080
-JWT_SECRET=sua-chave-secreta
-```
-
----
-
-### 4. Inicie o servidor
+### 3. Inicie o servidor
 
 ```bash
 npm run dev
@@ -161,22 +144,6 @@ O middleware verifica o cookie `authToken`:
 
 - Sem token em rota privada → redireciona para `/login`
 - Com token em rota pública → redireciona para `/dashboard`
-
----
-
-## 🧩 Adicionando componentes shadcn/ui
-
-```bash
-npx shadcn@latest add <componente>
-```
-
-Exemplos:
-
-```bash
-npx shadcn@latest add button
-npx shadcn@latest add dialog
-npx shadcn@latest add table
-```
 
 ---
 
